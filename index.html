@@ -65,25 +65,48 @@
         <form action="#" class="contact-form">
           <p>Оставьте свои данные, мы вам перезвоним</p>
 
+<div class="modal-window">
+
+
+
+<!--Льоша брав в секцію  і давав одинаковий клас (для подальшої стилізації)-->
 <label>
-          Имя
-        <input type="text" class="contact-form-input" name="user-name"></label>
+  <p>Имя</p>
+  <input type="text" class="contact-form-input" name="user-name">
+</label>
 <label>
 
-     Телефон
-<input type="tel" name="tel" /></label>
-   
+  <p>Телефон</p>
+  <input type="tel" class="contact-form-input" name="user-tel" />
+</label>
+
 
 <label>
-    Почта
-    <input type="email" name="email" /> </label>
+  <p>Почта</p>
+  <input type="email" class="contact-form-input" name="user-email" />
+</label>
+<!--Льоша брав в секцію -->
 
-Комментарий
-<textarea class="contact-form-massage" name="" id="" cols="" rows=""> </textarea>
 
 
-<input type="checkbox" name="license-contact" value="agreed-license"> 
-<button contact-form-btn>Отправить</button>
+<!--Льоша брав в секцію давав одинаковий клас-->
+<label for=""><p>Комментарий</p>
+<textarea class="contact-form-input" name="" id="" cols="" rows="" placeholder="Введите текст"> </textarea>
+</label>
+<!--Льоша брав в секцію -->
+
+<label  for="license">
+
+  <input type="checkbox" name="license-contact-btn" value="agreed-license" id="license">
+  Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+</label>
+
+
+
+<label for=""><button type="button" contact-form-btn>Отправить</button></label>
+
+</div>
+
         </form>
       </div>
           </div>

@@ -1017,6 +1017,7 @@ body {
   resize: none;
   padding: 12px 16px;
   border: 1px solid var(--secondary-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -1034,19 +1035,32 @@ body {
   margin-bottom: 4px;
 }
 
+/* якась помилка до низу*/
 .contact-form-message:focus,
 .contact-form-message:hover {
   border-color: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .license-contact:checked + .modal-for-label-check
-  display: block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-color: var(--accent-color);
-} */
+.contact-form-message:focus,
+.contact-form-message:focus .contact-form-input {
+  outline: none;
+}
+
+.license-contact:checked + .modal-for-label-check::before {
+  background-image: url("../img/svg/vector.svg");
+}
+
+.modal-for-label-check a {
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+/*якась помилка до верху*/
+
+.license-contact {
+  position: absolute;
+  appearance: none;
+}
 
 .modal-for-label-check {
   display: flex;
@@ -1054,16 +1068,22 @@ body {
   margin: 0 auto;
   margin-top: 17px;
   margin-bottom: 30px;
+  background-image: url("../img/svg/vector.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-for-label-check::before {
+/* .modal-for-label-check::before {
   display: block;
   content: "";
   width: 16px;
   height: 16px;
+  border: 1px solid #000;
   background-color: var(--accent-color);
   margin-right: 8px;
-}
+} */
 
 /* 
 

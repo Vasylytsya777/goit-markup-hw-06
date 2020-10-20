@@ -94,17 +94,18 @@
 
 
 <!--Льоша брав в секцію давав одинаковий клас-->
-<label for="user-email">Комментарий</label>
+<label class="modal-form-input-message" for="user-email">Комментарий</label>
 <textarea class="contact-form-message" name="user-message"  placeholder="Введите текст"></textarea>
 
 <!--Льоша брав в секцію -->
 
 
 
-<label  for="license">
-  <input type="checkbox" class="license-contact" name="license-contact" value="agreed-license" id="license">
-  Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-</label>
+  <input type="checkbox" class="license-contact visually-hidden" name="license-contact" value="agreed-license" id="license">
+
+  <label  for="license" class="modal-for-label-check"><span>Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span></label>
+
+
 <button type="button" class="contact-form-btn" >Отправить</button>
 
 

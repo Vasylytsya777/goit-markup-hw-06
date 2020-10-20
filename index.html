@@ -61,56 +61,67 @@
           <use href="./img/svg/sprite.svg#close-black"></use>
         </svg>
       </button>
-      <div>
-        <form action="#" class="contact-form">
+  <form action="#" class="contact-form">
           <p>Оставьте свои данные, мы вам перезвоним</p>
 
-<div class="modal-window">
-
-
-
 <!--Льоша брав в секцію  і давав одинаковий клас (для подальшої стилізації)-->
-<label>
-  <p>Имя</p>
-  <input type="text" class="contact-form-input" name="user-name">
-</label>
-<label>
 
-  <p>Телефон</p>
-  <input type="tel" class="contact-form-input" name="user-tel" />
-</label>
+<div class="modal-form-window">
+     <input type="text" class="contact-form-input" name="user-name" id="user-name">
+    <label class="modal-form-input-label" for="user-name">Имя</label>
+<svg class="modal-icon">
+  <use href="./img/svg/sprite.svg#person-black"></use>
+</svg>
+</div>
 
 
-<label>
-  <p>Почта</p>
-  <input type="email" class="contact-form-input" name="user-email" />
-</label>
+<div class="modal-form-window">
+   <input type="tel" class="contact-form-input" name="user-tel" id="user-tel" />
+    <label class="modal-form-input-label" for="user-tel">Телефон</label>
+<svg class="modal-icon">
+  <use href="./img/svg/sprite.svg#phone-black"></use>
+</svg>
+</div>
+
+<div class="modal-form-window">
+  <input type="email" class="contact-form-input" name="user-email" id="user-email" />
+    <label class="modal-form-input-label" for="user-email">Почта</label>
+<svg class="modal-icon">
+  <use href="./img/svg/sprite.svg#email-black"></use>
+</svg>
+</div>
 <!--Льоша брав в секцію -->
-
 
 
 <!--Льоша брав в секцію давав одинаковий клас-->
-<label for=""><p>Комментарий</p>
-<textarea class="contact-form-input" name="" id="" cols="" rows="" placeholder="Введите текст"> </textarea>
-</label>
+<label for="user-email">Комментарий</label>
+<textarea class="contact-form-message" name="user-message"  placeholder="Введите текст"></textarea>
+
 <!--Льоша брав в секцію -->
 
+
+
 <label  for="license">
-
-  <input type="checkbox" name="license-contact-btn" value="agreed-license" id="license">
-  Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+  <input type="checkbox" class="license-contact" name="license-contact" value="agreed-license" id="license">
+  Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
 </label>
+<button type="button" class="contact-form-btn" >Отправить</button>
 
-
-
-<label for=""><button type="button" contact-form-btn>Отправить</button></label>
-
-</div>
 
         </form>
       </div>
           </div>
       </div>
+
+
+
+      <div>
+
+
+
+
+
+      
 
 
 

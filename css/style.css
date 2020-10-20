@@ -940,16 +940,22 @@ body {
 }
 
 .contact-form {
+  box-sizing: border-box;
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
+}
+.contact-form p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.15;
   text-align: center;
-  margin: 40px;
+  letter-spacing: 0.03em;
 }
 
 .modal {
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

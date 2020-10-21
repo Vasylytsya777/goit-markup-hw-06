@@ -257,6 +257,7 @@ body {
 
 /*=============   HERO   ==============*/
 /*Секція герой */
+
 .section-hero {
   max-width: 1600px;
   margin-left: auto;
@@ -290,7 +291,7 @@ body {
   max-width: 700px;
 }
 
-/*=============   BUTTON   ==============*/
+/*=============  секція  BUTTON   ==============*/
 .button {
   /* font-family: inherit; */
   display: inline-block;

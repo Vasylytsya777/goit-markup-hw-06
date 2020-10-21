@@ -1132,10 +1132,6 @@ body {
   outline: none;
 }
 
-.license-contact:checked + .modal-for-label-check::before {
-  background-image: url("../img/svg/vector.svg");
-}
-
 .modal-for-label-check a {
   text-decoration-line: underline;
   color: #2196f3;
@@ -1146,7 +1142,9 @@ body {
   position: absolute;
   appearance: none;
 }
-
+.license-contact:checked + .modal-for-label-check::before {
+  background-image: url("../img/svg/vector.svg");
+}
 .modal-for-label-check {
   display: flex;
   align-items: center;

@@ -1144,6 +1144,9 @@ body {
 }
 .license-contact:checked + .modal-for-label-check::before {
   background-image: url("../img/svg/vector.svg");
+
+  background-color: var(--accent-color);
+  border: var(--accent-color);
 }
 .modal-for-label-check {
   display: flex;
@@ -1151,18 +1154,22 @@ body {
   margin: 0 auto;
   margin-top: 17px;
   margin-bottom: 30px;
+  outline: 2px solid color(--accent-color);
   background-image: url("../img/svg/vector.svg");
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-for-label-check::before {
   display: block;
+  align-items: center;
   content: "";
   width: 16px;
   height: 16px;
-  background-color: var(--accent-color);
+  border: 2px solid #000;
+  background-color: var(--white-color);
   margin-right: 8px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1182,7 +1189,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -1193,7 +1199,8 @@ body {
 
 .modal .close-modal:hover {
   cursor: pointer;
-  background-color: var(--accent-color);
+  fill: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal svg {
@@ -1213,7 +1220,7 @@ body {
   min-width: 200px;
   text-align: center;
   text-decoration: none;
-  pading-top: 30px;
+
   margin-bottom: 40px;
   margin: 0 auto;
   color: var(--white-color);
